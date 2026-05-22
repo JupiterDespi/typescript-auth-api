@@ -1,0 +1,17 @@
+
+> typescript-auth-api@1.0.0 start
+> node dist/server.js
+
+◇ injected env (16) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Connecting to DB: {
+  host: '139.59.57.223',
+  port: 11898,
+  user: 'avnadmin',
+  database: 'defaultdb'
+}
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'accounts' AND TABLE_SCHEMA = 'defaultdb'
+Executing (default): SHOW INDEX FROM `accounts`
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'refreshTokens' AND TABLE_SCHEMA = 'defaultdb'
+Executing (default): SHOW INDEX FROM `refreshTokens`
+Server running on http://localhost:4000
+Swagger docs available at http://localhost:4000/api-docs

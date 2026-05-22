@@ -1,0 +1,21 @@
+{
+  "db": {
+    "host": "139.59.57.223",
+    "servername": "mysql-37bc43ab-yeetgaming06-e5b5.i.aivencloud.com",
+    "port": 11898,
+    "user": "avnadmin",
+    "password": "AVNS_wXpgxhH2NwnVM2fJg1l",
+    "database": "defaultdb",
+    "ssl": true
+  },
+  "jwtSecret": "your-jwt-secret-key-change-this",
+  "email": {
+    "host": "smtp.ethereal.email",
+    "port": 587,
+    "secure": false,
+    "auth": {
+      "user": "ernestina.dare@ethereal.email",
+      "pass": "1aKQ3cvz73fxxb7zmw"
+    }
+  }
+}
