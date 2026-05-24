@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import express, { Application } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';

@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 export default validateRequest;
 
 function validateRequest(req: any, next: any, schema: any) {

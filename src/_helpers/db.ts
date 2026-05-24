@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import mysql from 'mysql2/promise';
 import { Sequelize } from 'sequelize';
 import fs from 'fs';

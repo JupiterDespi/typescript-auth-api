@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import { Resend } from 'resend';
 import nodemailer from 'nodemailer';
 

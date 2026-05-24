@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import { DataTypes, Model, Optional, Sequelize } from 'sequelize';
 
 export interface AccountAttributes {

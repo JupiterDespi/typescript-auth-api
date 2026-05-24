@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';

@@ -1,3 +1,4 @@
+// v1.0 - Updated May 2026
 import jwt from 'express-jwt';
 import db from '../_helpers/db';
 
