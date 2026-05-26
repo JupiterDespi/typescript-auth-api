@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = authorize;
+// v1.0 - Updated May 2026
 const express_jwt_1 = __importDefault(require("express-jwt"));
 const db_1 = __importDefault(require("../_helpers/db"));
 if (process.env.NODE_ENV === 'production' && !process.env.JWT_SECRET) {

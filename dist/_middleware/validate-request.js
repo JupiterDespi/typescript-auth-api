@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+// v1.0 - Updated May 2026
 exports.default = validateRequest;
 function validateRequest(req, next, schema) {
     const options = {

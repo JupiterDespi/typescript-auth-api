@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initRefreshToken = initRefreshToken;
+// v1.0 - Updated May 2026
 const sequelize_1 = require("sequelize");
 const account_model_1 = __importDefault(require("./account.model"));
 class RefreshToken extends sequelize_1.Model {

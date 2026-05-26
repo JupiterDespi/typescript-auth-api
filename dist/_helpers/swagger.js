@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// v1.0 - Updated May 2026
 const swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
 const express_1 = require("express");
 const yamljs_1 = __importDefault(require("yamljs"));

@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initialize = initialize;
+// v1.0 - Updated May 2026
 const promise_1 = __importDefault(require("mysql2/promise"));
 const sequelize_1 = require("sequelize");
 const fs_1 = __importDefault(require("fs"));
@@ -65,5 +66,5 @@ async function initialize() {
     });
     db.Account = (0, account_model_1.initAccount)(sequelize);
     db.RefreshToken = (0, refresh_token_model_1.initRefreshToken)(sequelize);
-    await sequelize.sync();
+    await sequelize.sync({ alter: true });
 }

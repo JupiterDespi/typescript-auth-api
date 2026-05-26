@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initAccount = initAccount;
+// v1.0 - Updated May 2026
 const sequelize_1 = require("sequelize");
 class Account extends sequelize_1.Model {
 }
@@ -17,6 +18,7 @@ function initAccount(sequelize) {
         verified: { type: sequelize_1.DataTypes.DATE, allowNull: true },
         resetToken: { type: sequelize_1.DataTypes.STRING, allowNull: true },
         resetTokenExpires: { type: sequelize_1.DataTypes.DATE, allowNull: true },
+        acceptTerms: { type: sequelize_1.DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
         createdAt: { type: sequelize_1.DataTypes.DATE, allowNull: false, defaultValue: sequelize_1.DataTypes.NOW },
         updatedAt: { type: sequelize_1.DataTypes.DATE, allowNull: false, defaultValue: sequelize_1.DataTypes.NOW }
     }, {
