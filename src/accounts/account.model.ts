@@ -13,6 +13,7 @@ export interface AccountAttributes {
     verified: Date | null;
     resetToken: string | null;
     resetTokenExpires: Date | null;
+    acceptTerms: boolean;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -31,6 +32,7 @@ class Account extends Model<AccountAttributes, AccountCreationAttributes> implem
     public verified!: Date | null;
     public resetToken!: string | null;
     public resetTokenExpires!: Date | null;
+    public acceptTerms!: boolean;
     public readonly createdAt!: Date;
     public readonly updatedAt!: Date;
 }
@@ -49,6 +51,7 @@ export function initAccount(sequelize: Sequelize): typeof Account {
             verified: { type: DataTypes.DATE, allowNull: true },
             resetToken: { type: DataTypes.STRING, allowNull: true },
             resetTokenExpires: { type: DataTypes.DATE, allowNull: true },
+            acceptTerms: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
             createdAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW },
             updatedAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW }
         },
